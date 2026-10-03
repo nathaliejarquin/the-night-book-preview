@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <title>Letter — The Night Book</title>
 <meta name="description" content="Write a letter: a dream, a vision, a presence, or a night you want painted. Seven fields. No cart. A human reads.">
 <meta name="theme-color" content="#A9B8C4">
@@ -13,7 +14,7 @@
 <script>document.documentElement.classList.add("js")</script>
 </head>
 <body class="page-letter">
-
+<svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs><symbol id="m-dream" viewBox="0 0 12 12"><circle cx="6" cy="6" r="3.2" fill="#B8955A" stroke="#B8955A" stroke-width="1" vector-effect="non-scaling-stroke"/></symbol><symbol id="m-sight" viewBox="0 0 12 12"><circle cx="6" cy="6" r="1.6" fill="#B8955A"/><circle cx="6" cy="6" r="4.9" fill="none" stroke="#B8955A" stroke-width="1" vector-effect="non-scaling-stroke"/></symbol><symbol id="m-night" viewBox="0 0 12 12"><circle cx="6" cy="6" r="1.6" fill="#B8955A"/><path d="M6 .6V3.4M6 8.6v2.8M.6 6h2.8M8.6 6h2.8" fill="none" stroke="#B8955A" stroke-width="1" vector-effect="non-scaling-stroke"/></symbol><symbol id="m-room" viewBox="0 0 12 12"><rect x="2.5" y="2.5" width="7" height="7" fill="none" stroke="#B8955A" stroke-width="1" vector-effect="non-scaling-stroke"/></symbol></defs></svg>
 <a class="skip" href="#main">Skip to content</a>
 <div class="progress" aria-hidden="true"><span></span></div>
 <header class="site-header">
@@ -37,7 +38,7 @@
 <div class="wrap">
   <div class="letter" data-letter>
     <aside class="letter__aside">
-      <div class="archwrap archwrap--aside"><span class="eclipse" aria-hidden="true"></span><div class="arch"><span class="arch__top caps" aria-hidden="true">The slot</span><div class="arch__win"><div class="imark imark--empty"><span class="imark__ring" aria-hidden="true"></span><span class="imark__big"></span><span class="imark__small caps">Letters</span></div></div></div></div>
+      <div class="archwrap archwrap--aside"><div class="arch"><span class="arch__top caps" aria-hidden="true">The slot</span><div class="arch__win"><div class="imark imark--empty"><span class="imark__big"></span><span class="imark__small caps">Letters</span></div></div></div></div>
       <p class="caps fig-cap">The slot · read in the order they arrive</p>
       <ol class="steps">
         <li><span>Letters are read in the order they arrive.</span></li>
@@ -66,7 +67,7 @@
         <input type="hidden" name="purse" value="" data-purse-value>
         <fieldset class="field" data-field="instrument">
           <legend><span class="field__num">i.</span>Instrument</legend>
-          <div class="choices"><label class="choice"><input type="radio" name="instrument" value="DREAM"><span><b>01 · DREAM</b><i>Paint My Dream</i><small>From USD 4,500</small></span></label><label class="choice"><input type="radio" name="instrument" value="SIGHT"><span><b>02 · SIGHT</b><i>Presence Portrait</i><small>From USD 5,000</small></span></label><label class="choice"><input type="radio" name="instrument" value="NIGHT"><span><b>03 · NIGHT</b><i>Live Event Painting</i><small>From USD 4,000 + travel</small></span></label><label class="choice"><input type="radio" name="instrument" value="ROOM"><span><b>04 · ROOM</b><i>Dream Mural</i><small>From USD 10,000 + travel</small></span></label></div>
+          <div class="choices"><label class="choice"><input type="radio" name="instrument" value="DREAM"><span><b>01 · <svg class="smark" width="12" height="12" aria-hidden="true" focusable="false"><use href="#m-dream"/></svg>DREAM</b><i>Paint My Dream</i><small>From USD 4,500</small></span></label><label class="choice"><input type="radio" name="instrument" value="SIGHT"><span><b>02 · <svg class="smark" width="12" height="12" aria-hidden="true" focusable="false"><use href="#m-sight"/></svg>SIGHT</b><i>Presence Portrait</i><small>From USD 5,000</small></span></label><label class="choice"><input type="radio" name="instrument" value="NIGHT"><span><b>03 · <svg class="smark" width="12" height="12" aria-hidden="true" focusable="false"><use href="#m-night"/></svg>NIGHT</b><i>Live Event Painting</i><small>From USD 4,000 + travel</small></span></label><label class="choice"><input type="radio" name="instrument" value="ROOM"><span><b>04 · <svg class="smark" width="12" height="12" aria-hidden="true" focusable="false"><use href="#m-room"/></svg>ROOM</b><i>Dream Mural</i><small>From USD 10,000 + travel</small></span></label></div>
           <p class="err" role="alert">Choose an instrument.</p>
         </fieldset>
         <div class="field field--float" data-field="city">
@@ -124,7 +125,8 @@
           <label class="radio-line"><input type="radio" name="privacy" value="may-not"> Process photos may not be shown</label>
         </fieldset>
         <div class="form__foot">
-          <button type="submit" class="pill pill--dark">Send the letter <span class="arr" aria-hidden="true">→</span></button>
+          <p class="preview-note" role="note">This is a preview. Letters can’t be sent from here yet.</p>
+          <button type="submit" class="pill pill--dark" disabled aria-disabled="true">Send the letter <span class="arr" aria-hidden="true">→</span></button>
           <p class="err err--submit" role="alert" data-submit-err>The letter could not be sent. Try again, or write to artwithnathalie@gmail.com.</p>
           <p><em class="blood">A human reads every letter.</em></p>
         </div>
