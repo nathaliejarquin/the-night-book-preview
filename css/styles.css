@@ -1017,4 +1017,4 @@ h2.sky__eyebrow{margin:0 0 1.4rem}
 
 /* GitHub Pages preview only */
 .preview-note{margin:0 0 .9rem;font-family:var(--ui);font-size:.8125rem;line-height:1.5;color:var(--muted)}
-.form button[type=submit][disabled]{opacity:.55;cursor:not-allowed;pointer-events:none}
+.form button[type=submit][disabled]{background:transparent!important;color:var(--muted)!important;border:1px dashed var(--muted)!important;box-shadow:none!important;opacity:1;cursor:not-allowed;pointer-events:none}
